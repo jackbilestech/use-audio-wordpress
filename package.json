@@ -1,0 +1,26 @@
+{
+  "name": "use-audio-wordpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./dist/**/* && tsc && rimraf ./wp-dist/**/* && node copy ",
+    "wp-test": "rimraf ./test/wp/wp-content/plugins/use-audio-wordpress/**/* && ncp ./wp-dist ./test/wp/wp-content/plugins/use-audio-wordpress",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.1",
+    "jquery": "^3.5.1",
+    "ncp": "^2.0.0",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7",
+    "zip-folder": "^1.0.0"
+  }
+}

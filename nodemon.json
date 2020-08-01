@@ -1,0 +1,8 @@
+{
+    "verbose": true,
+    "ext": "*",
+    "watch": [
+        "src"
+      ],
+    "exec": "yarn build && yarn wp-test"
+  }
